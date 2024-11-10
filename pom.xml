@@ -42,6 +42,7 @@
         <resources>
             <resource>
                 <directory>${project.build.directory}/lib</directory>
+                <targetPath>lib/</targetPath>
             </resource>
         </resources>
 
@@ -79,8 +80,8 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <classpathPrefix>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</classpathPrefix>
-                            <mainClass>com.example.MainClass</mainClass>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
                         </manifest>
                         <manifestEntries>
                             <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
